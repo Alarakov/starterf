@@ -27,11 +27,11 @@
 	},
 	"lint-staged": {
 		"src/**/*.{js,jsx,ts,tsx}": [
-			"eslint --fix",
+			"npm run eslint:fix",
 			"git add"
 		],
 		"src/**/*.{css,scss,sass}": [
-			"npm run --fix",
+			"npm run stylelint:fix",
 			"git add"
 		]
 	},
