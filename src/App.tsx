@@ -8,7 +8,7 @@ function App() {
 			{Array(6)
 				.fill(null)
 				.map((item) => {
-					return <div></div>
+					return <div>fdsgsdfs</div>
 				})}
 		</>
 	)
