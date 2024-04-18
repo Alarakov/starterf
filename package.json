@@ -4,6 +4,7 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
+		"start": "",
 		"prettier": "prettier",
 		"dev": "vite",
 		"build": "tsc && vite build",
@@ -14,11 +15,6 @@
 		"lint": "npm run eslint && npm run stylelint",
 		"lint:fix": "npm run eslint:fix &&  npm run stylelint:fix",
 		"preview": "vite preview"
-	},
-	"dependencies": {
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"vite-plugin-svgr": "^4.2.0"
 	},
 	"husky": {
 		"hooks": {
@@ -32,6 +28,11 @@
 		"src/**/*.{css,scss,sass}": [
 			"stylelint --fix"
 		]
+	},
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"vite-plugin-svgr": "^4.2.0"
 	},
 	"devDependencies": {
 		"@eslint/eslintrc": "^3.0.2",
