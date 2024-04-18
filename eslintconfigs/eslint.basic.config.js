@@ -1,4 +1,5 @@
 import js from "@eslint/js"
+
 import { loadPlugin } from "./eslint.plugins.helper.js"
 const promiseConfigs = loadPlugin("plugin:promise/recommended")
 export const jsEsLintConfig = {
