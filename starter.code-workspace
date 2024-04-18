@@ -1,0 +1,50 @@
+{
+	"folders": [
+		{
+			"path": ".",
+		},
+	],
+	"settings": {
+		"editor.formatOnSave": true,
+		"eslint.experimental.useFlatConfig": true,
+		"typescript.tsdk": "node_modules/typescript/lib", //редактор кода берет версию для intelsense из node/modules
+		"stylelint.validate": ["css", "postcss", "scss", "sass"],
+
+		"[typescript]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode", //дефолтных форматтер для файлов
+		},
+		"[typescriptReact]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode",
+		},
+		"[javascriptreact]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode",
+		},
+		"[javascript]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode",
+		},
+	},
+	"extensions": {
+		"recommendations": [
+			"esbenp.prettier-vscode", // - Форматирование кода
+			"dbaeumer.vscode-eslint", // - Линтинг JavaScript
+			"stylelint.vscode-stylelint", // - Линтинг CSS
+			"mrmlnc.vscode-scss", // - Поддержка SCSS
+			"sibiraj-s.vscode-scss-formatter", // - Форматирование SCSS
+			"mgmcdermott.vscode-language-babel", //- Babel JavaScript
+			"streetsidesoftware.code-spell-checker", //- Проверка орфографии
+			"mikestead.dotenv", // - .env файлы
+			"vincaslt.highlight-matching-tag", // - Подсветка тегов
+			"ecmel.vscode-html-css", // - CSS в HTML
+			"Zignd.html-css-class-completion", // - Автозаполнение CSS
+			"ms-vscode.vscode-typescript-next", //- TypeScript Последний
+			"bierner.lit-html", // - Поддержка lit-html
+			"christian-kohler.path-intellisense", //- Автодополнение пути
+			"jakob101.RelativePath", //- Относительные пути
+			"streetsidesoftware.code-spell-checker-russian", //- Проверка орфографии (Русский)
+			"streetsidesoftware.code-spell-checker", //- Проверка орфографии (Английский)
+			"naumovs.color-highlight", // -  выделение цвета в css
+			"meganrogge.template-string-converter", // когда пишете ${} внутри"", кавычки превращаются в ``
+			"editorconfig.editorconfig",
+		],
+	},
+}

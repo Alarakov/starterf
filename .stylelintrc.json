@@ -1,0 +1,12 @@
+{
+	"extends": ["stylelint-config-recommended-scss"],
+	"rules": {
+		"selector-max-id": 0,
+		"selector-class-pattern": null,
+		"rule-empty-line-before": null,
+		"scss/dollar-variable-pattern": null,
+		"declaration-no-important": true
+	},
+	"defaultSeverity": "warning",
+	"cache": true
+}
