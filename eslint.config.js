@@ -1,7 +1,6 @@
 // @ts-check
 import globals from "globals"
 import {
-	prettierESLintConfig,
 	jsEsLintConfig,
 	eslintTSConfig,
 	reactESLintConfig,
@@ -22,11 +21,6 @@ const eslintConfig = [
 	},
 
 	eslintTSConfig,
-
-	{
-		files: ["src/**/*.ts", "src/**/*.tsx"],
-		...prettierESLintConfig,
-	},
 	{
 		...reactESLintConfig,
 	},
