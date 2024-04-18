@@ -7,8 +7,12 @@
 		"prettier": "prettier",
 		"dev": "vite",
 		"build": "tsc && vite build",
-		"lint": "eslint ./src --color",
-		"lint:fix": "npm run lint --fix",
+		"stylelint": "stylelint src/**/*.scss",
+		"eslint": "eslint ./src --color",
+		"stylelint:fix": "npm run stylelint --fix",
+		"eslint:fix": "npm run eslint --fix",
+		"lint": "npm run eslint && npm run stylelint",
+		"lint:fix": "npm run eslint:fix &&  npm run stylelint:fix",
 		"preview": "vite preview"
 	},
 	"dependencies": {
