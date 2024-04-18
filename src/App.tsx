@@ -3,14 +3,6 @@ type Props = {
 }
 const Hello = (props: Props) => {}
 function App() {
-	return (
-		<>
-			{Array(6)
-				.fill(null)
-				.map((item) => {
-					return <div>fdssdsfgsdfs</div>
-				})}
-		</>
-	)
+	return <></>
 }
 export default App
