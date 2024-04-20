@@ -7,6 +7,19 @@
 		"scss/dollar-variable-pattern": null,
 		"declaration-no-important": true
 	},
-	"defaultSeverity": "warning",
-	"cache": true
+	"defaultSeverity": "error",
+	"cache": true,
+	"overrides": [
+		{
+			"files": ["**/*.module.scss"],
+			"rules": {
+				"selector-class-pattern": [
+					"^[a-z][a-zA-Z0-9]+$",
+					{
+						"message": "Class names in SCSS modules must be in camelCase."
+					}
+				]
+			}
+		}
+	]
 }

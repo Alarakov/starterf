@@ -4,6 +4,7 @@ import {
 	jsEsLintConfig,
 	eslintTSConfig,
 	reactESLintConfig,
+	eslintFileNamesConfig,
 } from "./eslintconfigs/index.js"
 
 const eslintConfig = [
@@ -24,6 +25,7 @@ const eslintConfig = [
 	{
 		...reactESLintConfig,
 	},
+	eslintFileNamesConfig,
 ]
 
 export default eslintConfig

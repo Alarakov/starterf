@@ -42,6 +42,41 @@ export const reactESLintConfig = {
 				message: "Boolean prop names must start with 'is' or 'has'",
 			},
 		],
+		"react/function-component-definition": [
+			2,
+			{ namedComponents: "arrow-function" },
+		],
+		"import/no-default-export": "off",
+		"import/prefer-default-export": "error",
+		"import/order": [
+			"error",
+			{
+				groups: [
+					["builtin", "external"],
+					"internal",
+					["sibling", "parent", "index"],
+				],
+				pathGroups: [
+					{
+						pattern: "react",
+						group: "external",
+						position: "before",
+					},
+				],
+				pathGroupsExcludedImportTypes: ["react"],
+				alphabetize: {
+					order: "asc",
+					caseInsensitive: true,
+				},
+			},
+		],
 		...reactHookRules.rules,
+		"react/jsx-pascal-case": [
+			"error",
+			{
+				allowAllCaps: true,
+				ignore: [],
+			},
+		],
 	},
 }
